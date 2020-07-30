@@ -1,0 +1,239 @@
+div#sliderblock {background: url(../images/banners/border_bottom_03.png) no-repeat 0 bottom; padding-bottom: 2px; width: 100%;  position: relative;}
+div#sliderblock div#banners-details{
+	background-color:#FFFFFF;
+	background:url(../images/banners/bluebox.jpg) no-repeat 0 0;
+	background-size: 100%;
+	width:225px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	top:0;
+}
+div#sliderblock div#banners-details h2{color: #ffffff; font-size: 24px; line-height: 25px; padding:15px 10px 15px 15px; font-weight:normal;}
+div#sliderblock div#banners-details p{color: #ffffff; font-size: 15px; line-height: 18px; padding:0 10px 15px 15px; }
+div#sliderblock div#banners-details a {font-size:12px;color:#fbb03d;text-decoration:none; padding-left:15px;}
+div#sliderblock div#banners-details a:hover {text-decoration:underline;}
+
+div#maincontent {width: 765px; float:left;margin:0 10px 0 10px; /*border-bottom: 1px dotted #54add6;*/ font-family:Arial,san-serif; border-botom:;}
+div#maincontent a:hover{text-decoration:underline;}
+div#maincontent h2 {font-size:16px;font-weight:;color:#0e5376;padding: 20px 0 10px 10px;}
+div#maincontent div.updates{ width: 765px; float:left;}
+div#maincontent div.updates ul{ margin: 0 0 0 5px; }
+div#maincontent div.updates ul li{overflow:hidden; padding:15px 0 9px 0; *padding-bottom:3px;}
+/*div#maincontent div.updates ul li.first-post{border-bottom: 1px dotted #54add6;}*/
+div#maincontent div.updates ul li a{font-size:13px;color:#d67500;text-decoration:none;} 
+div#maincontent div.updates ul li a:hover{text-decoration:underline;} 
+div#maincontent div.updates ul li div{float:left;}
+div#maincontent div.updates ul li div.post-image-holder{width: 164px; float:left; }
+div#maincontent div.updates ul li div.post-image-holder img{border: 3px solid #D67500;} 
+
+div#maincontent h4 {font-size:13px;color:#d67500;padding:0 0 10px 0;line-height:16px; font-weight:bold;}
+div#maincontent p {font-size: 12px; color:#000;padding-left:5px;}
+div#maincontent div.updates ul li div.post-details-holder{width: 760px; float:left}
+div#maincontent div.updates ul li div.post-details-holder p{font-size:12px; line-height:15px;}
+div#maincontent div.updates ul li div.post-details-holder a {font-size:12px;color:#d67500;text-decoration:none;}
+div#maincontent div.updates ul li div.post-details-holder a:hover {text-decoration:underline;}
+div#maincontent div.updates ul li div.post-details-holder a span{font-size:9px;}
+div#maincontent div#whatshappening{ margin-bottom: 20px; padding-bottom:20px;}
+div#maincontent div#upcomingevents{ margin-left:10px; }
+
+div#right-aside {float:left; font-family:Arial,san-serif;}
+div#right-aside h2{padding: 6px 10px; background: #fbb03e; margin: 5px 0 3px 3; font-weight:bold; color:#0e5376; font-size:18px;}
+div#right-aside ul {padding: 10px 0 5px 3;}
+div#right-aside div#quicklinks{margin-bottom: 10px;width:210px;}
+div#right-aside div#quicklinks h2{margin:5px 0 0 0;}
+div#right-aside div#quicklinks div{padding-bottom:5px;}
+div#right-aside div#quicklinks div object{top:0;}
+div#right-aside div#quicklinks ul li {background:url(../images/bullet_sitemap.jpg) no-repeat 0 8px;font-family:Arial,san-serif;font-size:12px;padding:0 0 0 20px;line-height:20px;}
+div#right-aside div#quicklinks ul li a {color:#d67500;text-decoration:none;}
+div#right-aside div#quicklinks ul li a:hover {text-decoration:underline;}
+
+
+
+div#right-aside div#card{margin-bottom: 10px;}
+div#right-aside div#card h2{margin:5px 0 0 0; height:35px;width:188px;}
+div#right-aside div#card div{padding-bottom:5px;}
+div#right-aside div#card div object{top:0;}
+
+div#right-aside ul li {background:url(../images/bullet_sitemap.jpg) no-repeat 0 8px;font-family:Arial,san-serif;font-size:12px;padding:0 0 0 20px;line-height:20px;}
+div#right-aside ul li a {color:#d67500;text-decoration:none;}
+div#right-aside ul li a:hover {text-decoration:underline;}
+
+div#footer {margin-top: 20px; clear:both; }
+div#footer ul {margin-top:20px; *margin-top: 0;}
+/*div#footer ul#social {margin-top:20px; *margin-top: 0;}*/
+/*div#footer hr{border:none;}*/
+div#footer p#datestamp {margin-right: 15px; float:right; font-size: 11px; padding:10px 0 24px 0; color:#a7a7a7;}
+/*div#footer ul#social {float:right; margin-right: 95px;}*/
+
+
+/*
+	AnythingSlider v1.8+ Default theme
+	By Chris Coyier: http://css-tricks.com
+	with major improvements by Doug Neiner: http://pixelgraphics.us/
+	based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+
+/*****************************
+  SET DEFAULT DIMENSIONS HERE
+ *****************************/
+/* change the ID & dimensions to match your slider */
+#slider {
+	width:1000px;
+	height:295px;
+	list-style: none;
+	/* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+/******************
+  SET STYLING HERE
+ ******************
+ =================================
+ Default state (no keyboard focus)
+ ==================================*/
+/* Overall Wrapper */
+.anythingSlider-default {
+	margin: 0 auto;
+	/* 45px right & left padding for the arrows, 28px @ bottom for navigation */
+	/*padding: 0 45px 28px 45px;*/
+}
+
+/* Navigation buttons + start/stop button, default state */
+.anythingSlider-default .anythingControls a {
+	/* top shadow */
+	color: #ffffff; 
+	text-decoration: none; 
+	display:block; 
+	padding: 4px 7px 4px 6px; 
+	font-weight:bold;
+	outline: none;
+}
+/* Make sure navigation text is visible */
+.anythingSlider-default .anythingControls a span {
+	visibility: visible;
+}
+/* Navigation current button, default state */
+.anythingSlider-default .anythingControls a.cur {
+	color: #fff;
+	background:url(../images/banners/nav_bg.png) no-repeat 0 2px;
+}
+
+
+/************************
+  NAVIGATION POSITIONING
+ ************************/
+/* Navigation Links */
+.anythingSlider-default .anythingControls { outline: 0; display: none; background:url(../images/nav-carousel-bg.png) no-repeat 0 0;position: absolute; left:30px; top: 200px; z-index:1; height: 32px; width: 208px; }
+.anythingSlider-default .anythingControls ul { padding: 3px 0 0 14px;}
+.anythingSlider-default .anythingControls ul li { float:left; }
+
+/* navigationSize window */
+.anythingSlider-default .anythingControls .anythingNavWindow {
+	overflow: hidden;
+	float: left;
+}
+
+/* Autoplay Start/Stop button */
+.anythingSlider-default .anythingControls .start-stop {
+	display: none!important;
+
+}
+
+/***********************
+  IE8 AND OLDER STYLING
+ ***********************/
+
+/* Navigation Arrows */
+.as-oldie .anythingSlider-default .arrow {
+	top: 30%;
+}
+.as-oldie .anythingSlider-default .arrow a {
+	margin: 0;
+}
+
+/* margin between nav buttons just looks better */
+.as-oldie .anythingSlider-default .anythingControls li {
+	/* margin-left: 3px;*/
+}
+
+/* When using the navigationSize option, the side margins need to be zero
+	None of the navigation panels look good in IE7 now =( */
+.as-oldie .anythingSlider-default .anythingControls a {
+	margin: 0;
+}
+.as-oldie .anythingSlider-default .anythingNavWindow {
+	margin: 0 2px;
+}
+.as-oldie .anythingSlider-default .anythingNavWindow li {
+	padding: 3px 0 0 0;
+}
+
+/***********************
+  COMMON SLIDER STYLING
+ ***********************/
+/* Overall Wrapper */
+.anythingSlider {
+	display: block;
+	overflow: visible !important;
+	position: relative;
+}
+/* anythingSlider viewport window */
+.anythingSlider .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingSlider .anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	overflow: visible !important;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation arrow text; indent moved to span inside "a", for IE7;
+  apparently, a negative text-indent on an "a" link moves the link as well as the text */
+.anythingSlider .arrow span {
+	display: block;
+	visibility: hidden;
+}
+/* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+.anythingSlider .arrow.disabled {
+	display: none;
+}
+/* all panels inside the slider; horizontal mode */
+.anythingSlider .panel {
+	background: transparent;
+	display: block;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* vertical mode */
+.anythingSlider .vertical .panel {
+	float: none;
+}
+/* fade mode */
+.anythingSlider .fade .panel {
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+/* fade mode active page - visible & on top */
+.anythingSlider .fade .activePage {
+	z-index: 0;
+}
